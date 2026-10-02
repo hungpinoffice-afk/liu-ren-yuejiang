@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="六壬月將" />
+<meta name="theme-color" content="#e9dcbe" />
+<meta name="format-detection" content="telephone=no,address=no,email=no" />
+<link rel="apple-touch-icon" id="ati" href="data:image/png;base64,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" />
+<title>大六壬 · 月將查詢</title>
+<style>
+  :root{
+    /* ── 中國風色票：宣紙・墨・朱砂・赭金・黛青 ── */
+    --paper:#e9dcbe;        /* 宣紙底 */
+    --paper2:#f7eed9;       /* 卡面 */
+    --paper3:#f0e3c4;       /* 卡面陰 */
+    --line:#cdb684;         /* 淡赭欄線 */
+    --line2:#b99a63;        /* 赭欄線 */
+    --ink:#241c12;          /* 焦墨 */
+    --ink2:#574729;         /* 淡墨 */
+    --ink3:#8a7550;         /* 赭墨 */
+    --cinnabar:#9e2b21;     /* 朱砂 */
+    --cinnabar2:#71180f;    /* 印泥深 */
+    --jin:#b28c46;          /* 赭金 */
+    --jin2:#e0c48c;         /* 描金 */
+    --dai:#2f4a5c;          /* 黛青 */
+    --wu-mu:#3d6b45;
+    --wu-huo:#b5392c;
+    --wu-tu:#9c6f1d;
+    --wu-jin:#6b7888;
+    --wu-shui:#2d5a86;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+  html,body{margin:0;padding:0;}
+  body{
+    background-color:var(--paper);
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(255,252,242,.66) 0%, rgba(255,252,242,0) 52%),
+      radial-gradient(circle at 86% 100%, rgba(158,43,33,.06) 0%, rgba(158,43,33,0) 48%),
+      radial-gradient(circle at 50% 50%, rgba(178,140,70,.10) 0%, rgba(178,140,70,0) 70%),
+      repeating-linear-gradient(0deg, rgba(120,95,55,.045) 0 1px, rgba(120,95,55,0) 1px 4px),
+      repeating-linear-gradient(90deg, rgba(120,95,55,.035) 0 1px, rgba(120,95,55,0) 1px 4px);
+    color:var(--ink);
+    font-family:"Noto Serif TC","Source Han Serif TC","DFKai-SB","標楷體","BiauKai","Kaiti TC","Microsoft JhengHei",serif;
+    line-height:1.6;
+    min-height:100vh;
+    min-height:100dvh;
+    padding:calc(20px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right)) calc(34px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
+  }
+  .wrap{max-width:880px;margin:0 auto;}
+
+  /* ── 標題（匾額）── */
+  header{
+    position:relative;
+    display:flex;align-items:center;gap:16px;margin-bottom:26px;
+    padding:16px 18px;border-radius:6px;
+    background:linear-gradient(158deg,#4a3520 0%,#2c1f12 55%,#1e150c 100%);
+    border:2px solid var(--jin);
+    box-shadow:0 6px 20px rgba(40,25,10,.30), inset 0 0 0 1px rgba(224,196,140,.28);
+  }
+  /* 匾額內框 + 四角五金釘 */
+  header::before{content:"";position:absolute;inset:5px;border:1px solid rgba(224,196,140,.40);border-radius:3px;pointer-events:none;}
+  header::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-repeat:no-repeat;background-size:7px 7px;
+    background-image:
+      radial-gradient(circle,var(--jin2) 0 42%, rgba(120,90,40,.85) 55%, rgba(0,0,0,0) 60%),
+      radial-gradient(circle,var(--jin2) 0 42%, rgba(120,90,40,.85) 55%, rgba(0,0,0,0) 60%),
+      radial-gradient(circle,var(--jin2) 0 42%, rgba(120,90,40,.85) 55%, rgba(0,0,0,0) 60%),
+      radial-gradient(circle,var(--jin2) 0 42%, rgba(120,90,40,.85) 55%, rgba(0,0,0,0) 60%);
+    background-position:9px 9px, calc(100% - 9px) 9px, calc(100% - 9px) calc(100% - 9px), 9px calc(100% - 9px);
+  }
+  .seal{
+    flex:0 0 auto;width:64px;height:64px;border-radius:5px;position:relative;
+    background:linear-gradient(150deg,#b83529 0%,var(--cinnabar) 45%,var(--cinnabar2) 100%);
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:19px;font-weight:700;letter-spacing:2px;
+    box-shadow:0 4px 14px rgba(113,24,15,.45), inset 0 0 0 2px rgba(255,240,215,.35), 0 0 0 2px var(--jin);
+    writing-mode:vertical-rl;text-orientation:upright;
+    text-shadow:0 1px 1px rgba(60,10,5,.5);
+  }
+  .titles h1{
+    margin:0;font-size:26px;letter-spacing:5px;font-weight:700;
+    color:#f6e9cc;text-shadow:0 1px 0 rgba(0,0,0,.5);
+  }
+  .titles p{margin:3px 0 0;font-size:12.5px;color:var(--jin2);letter-spacing:2px;}
+
+  /* ── 通用卡片（宣紙・回紋四角）── */
+  .card{
+    position:relative;
+    background:
+      radial-gradient(ellipse at 8% 0%, rgba(255,253,245,.85) 0%, rgba(255,253,245,0) 55%),
+      var(--paper2);
+    border:1px solid var(--line2);
+    border-radius:8px;
+    box-shadow:0 2px 14px rgba(110,85,45,.13), inset 0 0 0 3px rgba(255,255,248,.55);
+    padding:20px 22px;
+    margin-bottom:18px;
+  }
+  .card::before{
+    content:"";position:absolute;inset:5px;pointer-events:none;border-radius:4px;
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' preserveAspectRatio='none'><g fill='none' stroke='%23b28c46' stroke-width='1.6' opacity='0.62'><path d='M0 14 L0 0 L14 0'/><path d='M86 0 L100 0 L100 14'/><path d='M100 86 L100 100 L86 100'/><path d='M14 100 L0 100 L0 86'/></g><g fill='none' stroke='%239e2b21' stroke-width='1.1' opacity='0.34'><path d='M4 18 L4 4 L18 4'/><path d='M82 4 L96 4 L96 18'/><path d='M96 82 L96 96 L82 96'/><path d='M18 96 L4 96 L4 82'/></g></svg>") no-repeat center/100% 100%;
+  }
+
+  /* ── 輸入區 ── */
+  .field-row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;}
+  .field{flex:1 1 240px;min-width:210px;}
+  .field label{display:block;font-size:12.5px;color:var(--cinnabar);letter-spacing:2px;margin-bottom:6px;font-weight:600;}
+  .field select, .field input[type="text"]{
+    width:100%;padding:10px 12px;font-size:16px;min-height:44px;
+    font-family:inherit;color:var(--ink);
+    background:#fdf8ec;border:1px solid var(--line2);border-radius:5px;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.7), inset 0 2px 6px rgba(120,95,55,.07);
+    outline:none;transition:border-color .2s,box-shadow .2s;
+    touch-action:manipulation;-webkit-appearance:none;appearance:none;
+  }
+  /* 只有下拉選單才顯示箭頭；純輸入框不帶任何下拉／增減指示 */
+  .field select{
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23574229' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
+    background-repeat:no-repeat;background-position:right 12px center;padding-right:34px;
+  }
+  .field input[type="text"]{ -moz-appearance:textfield; }
+  .field input[type="text"]::-webkit-outer-spin-button,
+  .field input[type="text"]::-webkit-inner-spin-button{ -webkit-appearance:none;margin:0; }
+  .field input[type="text"]:focus, .field select:focus{border-color:var(--cinnabar);box-shadow:0 0 0 3px rgba(158,43,33,.14);}
+  .btn{
+    padding:11px 20px;font-size:16px;font-family:inherit;letter-spacing:2px;
+    min-height:44px;-webkit-appearance:none;appearance:none;
+    border-radius:5px;border:1px solid var(--jin);background:#fdf8ec;color:var(--ink2);
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.7);
+    cursor:pointer;transition:all .18s;white-space:nowrap;
+    touch-action:manipulation;-webkit-user-select:none;user-select:none;
+    -webkit-touch-callout:none;
+  }
+  .btn:hover{border-color:var(--cinnabar);color:var(--cinnabar);background:#fff;}
+  .btn.primary{
+    background:linear-gradient(150deg,#b83529 0%,var(--cinnabar) 45%,var(--cinnabar2) 100%);
+    color:#fcefdc;border-color:var(--jin);
+    box-shadow:0 3px 10px rgba(113,24,15,.32), inset 0 0 0 1px rgba(255,225,190,.28);
+  }
+  .btn.primary:hover{color:#fff;filter:brightness(1.07);}
+  .opt{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line2);display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:13px;color:var(--ink2);}
+  .opt label{display:flex;align-items:center;gap:7px;cursor:pointer;user-select:none;}
+  .opt input[type="checkbox"]{width:15px;height:15px;accent-color:var(--cinnabar);cursor:pointer;}
+  .hint{color:var(--ink3);font-size:12px;}
+  .swipe-tip{display:none;font-size:11px;color:var(--ink3);margin:7px 0 0;text-align:right;letter-spacing:.5px;}
+
+  /* ── 四柱 ── */
+  .sec-title{
+    display:flex;align-items:center;gap:10px;
+    font-size:14.5px;letter-spacing:5px;color:var(--cinnabar);
+    margin:0 0 16px;font-weight:700;position:relative;
+  }
+  .sec-title::before{content:"";width:5px;height:17px;border-radius:1px;background:var(--cinnabar);box-shadow:1px 0 0 var(--jin);}
+  .sec-title::after{
+    content:"";flex:1;height:7px;margin-left:4px;
+    background:
+      linear-gradient(90deg,var(--jin) 0 60%, rgba(178,140,70,0) 60%) no-repeat left center/70% 1px,
+      linear-gradient(45deg,transparent 3px,var(--cinnabar) 3px 4.5px,transparent 4.5px) no-repeat right 2px center/9px 9px;
+    opacity:.85;
+  }
+  .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+  .pillar{
+    position:relative;
+    background:linear-gradient(180deg,#fdf6e4 0%,#f2e5c8 100%);
+    border:1px solid var(--line2);border-radius:4px;
+    padding:15px 8px 13px;text-align:center;
+    transition:border-color .2s,transform .2s,box-shadow .2s;
+    box-shadow:inset 0 0 0 2px rgba(255,252,242,.6), inset 0 -14px 22px rgba(178,140,70,.10);
+  }
+  /* 竹簡橫束 */
+  .pillar::before{content:"";position:absolute;left:-1px;right:-1px;top:5px;height:2px;background:var(--line2);opacity:.6;}
+  .pillar::after{content:"";position:absolute;left:-1px;right:-1px;bottom:5px;height:2px;background:var(--line2);opacity:.6;}
+  .pillar:hover{border-color:var(--cinnabar);transform:translateY(-2px);box-shadow:inset 0 0 0 2px rgba(255,252,242,.6), 0 4px 12px rgba(110,85,45,.16);}
+  .pillar .pname{
+    display:inline-block;font-size:12px;letter-spacing:2px;color:var(--paper);
+    background:var(--cinnabar);padding:1px 9px;border-radius:2px;
+    margin-bottom:11px;box-shadow:inset 0 0 0 1px var(--jin);
+  }
+  .gz{
+    font-size:40px;line-height:1.12;font-weight:600;
+    display:block;letter-spacing:0;
+    font-family:"DFKai-SB","標楷體","BiauKai","Noto Serif TC",serif;
+    text-shadow:0 1px 0 rgba(255,255,255,.6);
+  }
+  .gz.hide{visibility:hidden;}
+  .meta{font-size:11.5px;color:var(--ink3);margin-top:8px;letter-spacing:1px;min-height:17px;}
+
+  /* 五行色 */
+  .w-mu{color:var(--wu-mu);} .w-huo{color:var(--wu-huo);} .w-tu{color:var(--wu-tu);}
+  .w-jin{color:var(--wu-jin);} .w-shui{color:var(--wu-shui);}
+
+  /* ── 月將（朱砂神牌）── */
+  .jiang-card{
+    display:flex;align-items:center;gap:24px;flex-wrap:wrap;
+    background:
+      radial-gradient(ellipse at 12% 10%, rgba(255,238,215,.20) 0%, rgba(255,238,215,0) 60%),
+      linear-gradient(135deg,#5a2119 0%,#7d231a 45%,#4d1a12 100%);
+    border:1px solid var(--jin);
+    box-shadow:inset 0 0 0 3px rgba(224,196,140,.30), inset 0 0 0 5px rgba(158,43,33,.55), 0 6px 20px rgba(70,20,12,.28);
+  }
+  .jiang-card::before{
+    content:"";position:absolute;inset:8px;pointer-events:none;border-radius:3px;
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' preserveAspectRatio='none'><g fill='none' stroke='%23e0c48c' stroke-width='1.5' opacity='0.55'><path d='M0 16 L0 0 L16 0'/><path d='M84 0 L100 0 L100 16'/><path d='M100 84 L100 100 L84 100'/><path d='M16 100 L0 100 L0 84'/></g></svg>") no-repeat center/100% 100%;
+  }
+  .jiang-seal{
+    flex:0 0 auto;width:88px;height:88px;border-radius:6px;position:relative;
+    background:linear-gradient(150deg,#c93f2e 0%,#a02c21 55%,#6d1a12 100%);
+    color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    box-shadow:0 5px 18px rgba(40,8,4,.5), inset 0 0 0 2px rgba(255,236,210,.42), 0 0 0 2px var(--jin2);
+    text-shadow:0 1px 2px rgba(50,8,4,.55);
+  }
+  .jiang-seal .jz{font-size:30px;font-weight:700;line-height:1;font-family:"DFKai-SB","標楷體",serif;}
+  .jiang-seal .jn{font-size:11px;letter-spacing:3px;margin-top:6px;opacity:.93;}
+  .jiang-body h3{
+    margin:0 0 5px;font-size:15px;letter-spacing:5px;color:var(--jin2);
+    font-family:"DFKai-SB","標楷體",serif;
+  }
+  .jiang-main{font-size:30px;font-weight:700;letter-spacing:6px;font-family:"DFKai-SB","標楷體",serif;color:#f6e4c2;text-shadow:0 1px 2px rgba(40,8,4,.6);}
+  .jiang-sub{font-size:12.5px;color:#e2c9a0;margin-top:6px;letter-spacing:.5px;}
+
+  /* ── 節氣細節 ── */
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2px 26px;}
+  .kv{display:flex;justify-content:space-between;gap:12px;padding:8px 2px;border-bottom:1px dotted var(--line2);font-size:13.5px;}
+  .kv:last-child{border-bottom:none;}
+  .kv .k{color:var(--ink3);letter-spacing:1px;}
+  .kv .v{color:var(--ink);font-weight:600;text-align:right;font-family:"DFKai-SB","標楷體",serif;}
+  .kv .v small{display:block;font-weight:400;color:var(--ink3);font-size:11.5px;margin-top:2px;font-family:inherit;}
+
+  /* ── 參考表 ── */
+  /* 朱絲欄表格 */
+  table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;}
+  th,td{border:1px solid var(--line2);padding:8px 6px;text-align:center;
+    font-family:"DFKai-SB","標楷體","Noto Serif TC",serif;}
+  thead th{background:linear-gradient(180deg,#e7d3a6,#dcc28d);color:#4a3312;font-weight:700;letter-spacing:1.5px;font-size:12.5px;
+    border-color:var(--jin);box-shadow:inset 0 1px 0 rgba(255,250,238,.7);}
+  tbody th{background:#f0e2c2;color:var(--cinnabar);font-weight:700;font-size:12.5px;letter-spacing:1.5px;border-color:var(--jin);}
+  tbody td{background:#fbf5e6;}
+  td.cur{background:#e8c9b3;color:var(--cinnabar);font-weight:700;
+    box-shadow:inset 0 0 0 1.5px var(--cinnabar), inset 0 0 0 3px rgba(255,248,238,.6);}
+  th.cur{background:#e8c9b3;color:var(--cinnabar);box-shadow:inset 0 0 0 1.5px var(--cinnabar);}
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+
+  footer{text-align:center;font-size:11.5px;color:var(--ink3);line-height:1.9;margin-top:26px;letter-spacing:.5px;position:relative;}
+  footer b{color:var(--cinnabar);font-weight:700;}
+  footer::before{content:"❖";display:block;color:var(--jin);font-size:13px;margin-bottom:6px;}
+  .ver{
+    display:inline-block;margin-top:8px;padding:2px 10px;border:1px solid var(--jin);border-radius:2px;
+    font-size:11px;letter-spacing:1.5px;color:var(--ink2);background:rgba(255,250,238,.7);
+  }
+
+  @media (max-width:560px){
+    body{padding:calc(16px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(12px + env(safe-area-inset-left));}
+    .gz{font-size:32px;}
+    .pillars{gap:8px;}
+    .pillar{padding:13px 4px 11px;}
+    .titles h1{font-size:21px;letter-spacing:4px;}
+    .titles p{font-size:11.5px;letter-spacing:1.2px;}
+    .seal{width:54px;height:54px;font-size:16px;}
+    .jiang-seal{width:74px;height:74px;}
+    .jiang-main{font-size:26px;letter-spacing:4px;}
+    .card{padding:17px 15px;}
+    header{padding:13px 14px;gap:12px;}
+    /* 手機：輸入區改雙欄網格，避免擠在一起 */
+    .field-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 10px;align-items:end;}
+    .field{flex:none !important;min-width:0 !important;}
+    .field-row .btn{grid-column:span 2;width:100%;}
+    .pillars{grid-template-columns:repeat(2,1fr);} /* 四柱改 2×2，字更大更好點 */
+    .table-scroll{-webkit-overflow-scrolling:touch;scrollbar-width:thin;}
+    .swipe-tip{display:block;}
+    .card::before{inset:4px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="seal">六壬</div>
+    <div class="titles">
+      <h1>大六壬 · 月將查詢</h1>
+      <p>輸入陽曆時間 ｜ 以「過中氣換將」為原則</p>
+    </div>
+  </header>
+
+  <!-- 輸入 -->
+  <section class="card">
+    <p class="hint" style="margin:-4px 0 14px;">輸入西元年月日時（本地時間 UTC+8），年用輸入框、月／日／時／分用下拉選單</p>
+    <div class="field-row">
+      <div class="field" style="flex:0 0 112px;min-width:96px;">
+        <label>年（西元）</label>
+        <input type="text" id="y" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off" placeholder="2026" />
+      </div>
+      <div class="field" style="flex:0 0 92px;min-width:80px;">
+        <label>月</label>
+        <select id="mo"></select>
+      </div>
+      <div class="field" style="flex:0 0 92px;min-width:80px;">
+        <label>日</label>
+        <select id="d"></select>
+      </div>
+      <div class="field" style="flex:0 0 92px;min-width:80px;">
+        <label>時</label>
+        <select id="h"></select>
+      </div>
+      <div class="field" style="flex:0 0 92px;min-width:80px;">
+        <label>分</label>
+        <select id="mi"></select>
+      </div>
+      <button class="btn primary" id="go">查 詢</button>
+      <button class="btn" id="now">現在</button>
+    </div>
+    <div class="opt">
+      <label><input type="checkbox" id="lateZi" /> 23 時後即算次日子時（晚子時換日）</label>
+      <span class="hint">＊未勾選時，日柱以 00:00 換日（夜子時）；時支仍以 23:00 起子時。</span>
+      <span class="hint">＊順時輸入，依立春換年、中氣換將推算。</span>
+    </div>
+  </section>
+
+  <!-- 四柱 -->
+  <section class="card">
+    <h2 class="sec-title">四 柱</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pname">年 柱</div>
+        <span class="gz" id="g0">—</span><span class="gz" id="z0">—</span>
+        <div class="meta" id="m0"></div>
+      </div>
+      <div class="pillar">
+        <div class="pname">月 柱</div>
+        <span class="gz" id="g1">—</span><span class="gz" id="z1">—</span>
+        <div class="meta" id="m1"></div>
+      </div>
+      <div class="pillar">
+        <div class="pname">日 柱</div>
+        <span class="gz" id="g2">—</span><span class="gz" id="z2">—</span>
+        <div class="meta" id="m2"></div>
+      </div>
+      <div class="pillar">
+        <div class="pname">時 柱</div>
+        <span class="gz" id="g3">—</span><span class="gz" id="z3">—</span>
+        <div class="meta" id="m3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 月將 -->
+  <section class="card jiang-card">
+    <div class="jiang-seal">
+      <div class="jz" id="jiangZhi">—</div>
+      <div class="jn" id="jiangName">月將</div>
+    </div>
+    <div class="jiang-body">
+      <h3>月 將</h3>
+      <div class="jiang-main" id="jiangFull">—</div>
+      <div class="jiang-sub" id="jiangWhy">—</div>
+    </div>
+  </section>
+
+  <!-- 節氣細節 -->
+  <section class="card">
+    <h2 class="sec-title">節 氣 依 據</h2>
+    <div class="grid2">
+      <div class="kv"><span class="k">太陽黃經</span><span class="v" id="vLam">—</span></div>
+      <div class="kv"><span class="k">所屬節（換月）</span><span class="v" id="vJie">—</span></div>
+      <div class="kv"><span class="k">已過中氣（換將）</span><span class="v" id="vPassed">—</span></div>
+      <div class="kv"><span class="k">下一中氣</span><span class="v" id="vNext">—</span></div>
+    </div>
+  </section>
+
+  <!-- 參考表 -->
+  <section class="card">
+    <h2 class="sec-title">中 氣 · 月 將 對 照</h2>
+    <div class="table-scroll">
+      <table id="refTable">
+        <thead>
+          <tr><th>中氣</th><th>雨水</th><th>春分</th><th>谷雨</th><th>小滿</th><th>夏至</th><th>大暑</th><th>處暑</th><th>秋分</th><th>霜降</th><th>小雪</th><th>冬至</th><th>大寒</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>月將</th><td>亥</td><td>戌</td><td>酉</td><td>申</td><td>未</td><td>午</td><td>巳</td><td>辰</td><td>卯</td><td>寅</td><td>丑</td><td>子</td></tr>
+          <tr><th>月將名</th><td>登明</td><td>河魁</td><td>從魁</td><td>傳送</td><td>小吉</td><td>勝光</td><td>太乙</td><td>天罡</td><td>太沖</td><td>功曹</td><td>大吉</td><td>神后</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="swipe-tip">← 左右滑動查看全部十二中氣 →</span>
+    <p class="hint" style="margin:12px 0 0;">
+      月將隨太陽過宮而逆行：過中氣即換將。以上十二中氣，各歷一月，依序循環。
+    </p>
+  </section>
+
+  <footer>
+    <b>大六壬月將查詢</b>　·　節氣時刻由程式依太陽視黃經推算（Meeus 演算法），誤差約數分鐘<br/>
+    年柱以立春換年、月柱以節換月、月將以中氣換將、日柱以 60 甲子連續推算
+    <div class="ver">中國風色調 · v2</div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var RAD = Math.PI / 180;
+  var GAN = ['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
+  var ZHI = ['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+  var SHENGXIAO = ['鼠','牛','虎','兔','龍','蛇','馬','羊','猴','雞','狗','豬'];
+  var SHICHEN = ['子時','丑時','寅時','卯時','辰時','巳時','午時','未時','申時','酉時','戌時','亥時'];
+  var JIANG_NAME = {'亥':'登明','戌':'河魁','酉':'從魁','申':'傳送','未':'小吉','午':'勝光','巳':'太乙','辰':'天罡','卯':'太沖','寅':'功曹','丑':'大吉','子':'神后'};
+  var GAN_WU = {'甲':'木','乙':'木','丙':'火','丁':'火','戊':'土','己':'土','庚':'金','辛':'金','壬':'水','癸':'水'};
+  var ZHI_WU = {'子':'水','丑':'土','寅':'木','卯':'木','辰':'土','巳':'火','午':'火','未':'土','申':'金','酉':'金','戌':'土','亥':'水'};
+  var WU_CLASS = {'木':'w-mu','火':'w-huo','土':'w-tu','金':'w-jin','水':'w-shui'};
+  // 中氣：角度 -> 名稱（角度 ≡ 0 mod 30）
+  var ZHONGQI = {0:'春分',30:'谷雨',60:'小滿',90:'夏至',120:'大暑',150:'處暑',180:'秋分',210:'霜降',240:'小雪',270:'冬至',300:'大寒',330:'雨水'};
+  var JIEQI = {315:'立春',345:'驚蟄',15:'清明',45:'立夏',75:'芒種',105:'小暑',135:'立秋',165:'白露',195:'寒露',225:'立冬',255:'大雪',285:'小寒'};
+  // 中氣角度 -> 月將支（(10 - 角度/30) mod 12）
+  function jiangBranchFromAngle(angle){ return ((10 - Math.round(angle/30)) % 12 + 12) % 12; }
+
+  function jdnFromGregorian(y, m, d){
+    var a = Math.floor((14 - m) / 12), yy = y + 4800 - a, mm = m + 12*a - 3;
+    return d + Math.floor((153*mm + 2)/5) + 365*yy + Math.floor(yy/4) - Math.floor(yy/100) + Math.floor(yy/400) - 32045;
+  }
+  // 太陽視黃經（度，Meeus 低精度）
+  function solarLongitude(jd){
+    var T = (jd - 2451545.0) / 36525;
+    var L0 = 280.46646 + 36000.76983*T + 0.0003032*T*T;
+    var M  = 357.52911 + 35999.05029*T - 0.0001537*T*T;
+    var C  = (1.914602 - 0.004817*T - 0.000014*T*T) * Math.sin(M*RAD)
+           + (0.019993 - 0.000101*T) * Math.sin(2*M*RAD)
+           + 0.000289 * Math.sin(3*M*RAD);
+    var omega = 125.04 - 1934.136*T;
+    var lam = L0 + C - 0.00569 - 0.00478*Math.sin(omega*RAD);
+    return ((lam % 360) + 360) % 360;
+  }
+  // 牛頓法求太陽到某黃經的儒略日
+  function findTermJD(targetAngle, jdNear){
+    var jd = jdNear;
+    for (var i=0;i<8;i++){
+      var lam = solarLongitude(jd);
+      var diff = ((targetAngle - lam + 540) % 360) - 180;
+      jd += diff / 0.9856473;
+    }
+    return jd;
+  }
+  function jdToLocal(jd){
+    var ms = (jd - 2440587.5) * 86400000 + 8*3600000;
+    var d = new Date(ms);
+    var p = function(n){ return String(n).padStart(2,'0'); };
+    return d.getUTCFullYear() + '-' + p(d.getUTCMonth()+1) + '-' + p(d.getUTCDate())
+         + ' ' + p(d.getUTCHours()) + ':' + p(d.getUTCMinutes());
+  }
+
+  function compute(y, mo, d, h, mi, lateZi){
+    // 日柱基準日（可因晚子時換日而進一日）
+    var dy = y, dm = mo, dd = d;
+    if (lateZi && h >= 23){
+      var t = new Date(Date.UTC(y, mo-1, d));
+      t.setUTCDate(t.getUTCDate() + 1);
+      dy = t.getUTCFullYear(); dm = t.getUTCMonth()+1; dd = t.getUTCDate();
+    }
+    var jd = (Date.UTC(y, mo-1, d, h, mi) / 86400000) + 2440587.5 - 8/24;
+    var lam = solarLongitude(jd);
+
+    // 年柱（立春換年）
+    var lichunJD = findTermJD(315, jdnFromGregorian(y, 2, 4) - 0.5);
+    var pillarYear = (jd < lichunJD) ? y - 1 : y;
+    var yIdx = ((pillarYear - 4) % 60 + 60) % 60;
+    var yStem = yIdx % 10, yBranch = yIdx % 12;
+    var yearPillar = GAN[yStem] + ZHI[yBranch];
+
+    // 月柱（節換月）
+    var jieK = Math.floor((((lam - 15) % 360) + 360) % 360 / 30);
+    var jieAngle = (15 + 30*jieK) % 360;
+    var monthBranch = (2 + ((((jieAngle - 315)/30) % 12) + 12) % 12) % 12;
+    var mFromYin = (monthBranch - 2 + 12) % 12;
+    var mStem = (2*(yStem % 5) + 2 + mFromYin) % 10;
+    var monthPillar = GAN[mStem] + ZHI[monthBranch];
+
+    // 日柱
+    var dIdx = ((jdnFromGregorian(dy, dm, dd) + 49) % 60 + 60) % 60;
+    var dStem = dIdx % 10, dBranch = dIdx % 12;
+    var dayPillar = GAN[dStem] + ZHI[dBranch];
+
+    // 時柱
+    var hBranch = Math.floor((h + 1) / 2) % 12;
+    var hStem = (2*(dStem % 5) + hBranch) % 10;
+    var hourPillar = GAN[hStem] + ZHI[hBranch];
+
+    // 月將（過中氣換將）
+    var zqK = Math.floor(lam / 30);
+    var zqAngle = (30 * zqK) % 360;
+    var jBranch = jiangBranchFromAngle(zqAngle);
+    var passedJD = findTermJD(zqAngle, jd - ((((lam - zqAngle) % 360) + 360) % 360) / 0.9856473);
+    var nextAngle = (zqAngle + 30) % 360;
+    var nextJD = findTermJD(nextAngle, jd + ((((nextAngle - lam) % 360) + 360) % 360) / 0.9856473);
+
+    return {
+      yStem:yStem, yBranch:yBranch, mStem:mStem, monthBranch:monthBranch,
+      dStem:dStem, dBranch:dBranch, hStem:hStem, hBranch:hBranch,
+      yearPillar:yearPillar, monthPillar:monthPillar, dayPillar:dayPillar, hourPillar:hourPillar,
+      lam: lam, jieName: JIEQI[jieAngle], monthBranchName: ZHI[monthBranch],
+      jiangBranch: jBranch, jiangName: JIANG_NAME[ZHI[jBranch]],
+      zqAngle: zqAngle, zqName: ZHONGQI[zqAngle],
+      nextZqName: ZHONGQI[nextAngle],
+      passedTime: jdToLocal(passedJD), nextTime: jdToLocal(nextJD)
+    };
+  }
+
+  // ── 繪製 ──
+  function setGZ(gi, zi, stemChar, branchChar, metaText){
+    var ge = document.getElementById('g' + gi);
+    var ze = document.getElementById('z' + zi);
+    var me = document.getElementById('m' + gi);
+    ge.textContent = stemChar;
+    ze.textContent = branchChar;
+    ge.className = 'gz ' + (WU_CLASS[GAN_WU[stemChar]] || '');
+    ze.className = 'gz ' + (WU_CLASS[ZHI_WU[branchChar]] || '');
+    me.textContent = metaText || '';
+  }
+
+  function daysInMonth(y, m){ return new Date(Date.UTC(y, m, 0)).getUTCDate(); }
+  function pad2(n){ return String(n).padStart(2,'0'); }
+  function populate(){
+    var mo = document.getElementById('mo'), d = document.getElementById('d'),
+        h = document.getElementById('h'), mi = document.getElementById('mi');
+    if (!mo.options.length){
+      for (var i=1;i<=12;i++){ var o=document.createElement('option'); o.value=i; o.textContent=i+'月'; mo.appendChild(o); }
+      for (var i=0;i<24;i++){ var o=document.createElement('option'); o.value=i; o.textContent=i+'時'; h.appendChild(o); }
+      for (var k=0;k<60;k++){ var o=document.createElement('option'); o.value=k; o.textContent=pad2(k)+'分'; mi.appendChild(o); }
+    }
+    var y = +document.getElementById('y').value || new Date().getFullYear();
+    var mm = +mo.value, max = daysInMonth(y, mm);
+    var cur = +d.value || 1;
+    d.innerHTML = '';
+    for (var i=1;i<=max;i++){ var o=document.createElement('option'); o.value=i; o.textContent=i+'日'; d.appendChild(o); }
+    if (cur > max) cur = max;
+    d.value = cur;
+  }
+  function render(){
+    var y = +document.getElementById('y').value;
+    var mo = +document.getElementById('mo').value;
+    var d = +document.getElementById('d').value;
+    var h = +document.getElementById('h').value;
+    var mi = +document.getElementById('mi').value;
+    if (!y || !mo || !d) return;
+    var max = daysInMonth(y, mo);
+    if (d > max) d = max;
+    var lateZi = document.getElementById('lateZi').checked;
+    var r = compute(y, mo, d, h, mi, lateZi);
+
+    setGZ(0, 0, r.yearPillar[0], r.yearPillar[1], '生肖 ' + SHENGXIAO[r.yBranch]);
+    setGZ(1, 1, r.monthPillar[0], r.monthPillar[1], r.jieName + '後');
+    setGZ(2, 2, r.dayPillar[0], r.dayPillar[1], '');
+    setGZ(3, 3, r.hourPillar[0], r.hourPillar[1], SHICHEN[r.hBranch]);
+
+    var jz = document.getElementById('jiangZhi');
+    jz.textContent = ZHI[r.jiangBranch];
+    jz.className = 'jz';
+    document.getElementById('jiangName').textContent = '月將';
+    document.getElementById('jiangFull').textContent = ZHI[r.jiangBranch] + ' 將 · ' + r.jiangName;
+    document.getElementById('jiangWhy').textContent =
+      '已過「' + r.zqName + '」（太陽黃經 ' + r.zqAngle + '°），故取 ' + ZHI[r.jiangBranch] + '（' + r.jiangName + '）為月將';
+
+    document.getElementById('vLam').textContent = r.lam.toFixed(2) + '°';
+    document.getElementById('vJie').innerHTML = r.jieName + ' → ' + r.monthBranchName + '月' + '<small>月柱 ' + r.monthPillar + '</small>';
+    document.getElementById('vPassed').innerHTML = r.zqName + '<small>' + r.passedTime + '</small>';
+    document.getElementById('vNext').innerHTML = r.nextZqName + '<small>' + r.nextTime + '</small>';
+
+    highlightTable(r.zqName);
+  }
+
+  var REF_ZQ = ['雨水','春分','谷雨','小滿','夏至','大暑','處暑','秋分','霜降','小雪','冬至','大寒'];
+  function highlightTable(curName){
+    var cells = document.querySelectorAll('#refTable thead th, #refTable tbody td, #refTable tbody th');
+    for (var i=0;i<cells.length;i++){ cells[i].classList.remove('cur'); }
+    var idx = REF_ZQ.indexOf(curName);
+    if (idx < 0) return;
+    var thead = document.querySelectorAll('#refTable thead th');
+    if (thead[idx+1]) thead[idx+1].classList.add('cur');
+    document.querySelectorAll('#refTable tbody tr').forEach(function(tr){
+      var tds = tr.querySelectorAll('td');
+      if (tds[idx]) tds[idx].classList.add('cur');
+    });
+  }
+
+  function nowLocal(){
+    var d = new Date();
+    var p = function(n){ return String(n).padStart(2,'0'); };
+    return d.getFullYear() + '-' + p(d.getMonth()+1) + '-' + p(d.getDate()) + 'T' + p(d.getHours()) + ':' + p(d.getMinutes());
+  }
+
+  function setNow(){
+    var n = new Date();
+    document.getElementById('y').value = n.getFullYear();
+    document.getElementById('mo').value = n.getMonth()+1;
+    document.getElementById('d').value = n.getDate();
+    document.getElementById('h').value = n.getHours();
+    document.getElementById('mi').value = n.getMinutes();
+    populate(); render();
+  }
+  document.getElementById('go').addEventListener('click', render);
+  document.getElementById('now').addEventListener('click', setNow);
+  document.getElementById('y').addEventListener('input', function(){
+    var v = this.value.replace(/[^0-9]/g,'').slice(0,4);
+    if (v !== this.value) this.value = v;
+  });
+  ['y','mo','d','h','mi'].forEach(function(id){
+    document.getElementById(id).addEventListener('change', function(){ populate(); render(); });
+    document.getElementById(id).addEventListener('input', function(){ populate(); render(); });
+  });
+  document.getElementById('lateZi').addEventListener('change', render);
+  setNow();
+})();
+</script>
+</body>
+</html>
